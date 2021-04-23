@@ -4,12 +4,33 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build --modern",
+    "lint": "vue-cli-service lint",
+    "serve:Pager": "vue serve ./src/components/Pager/test.vue",
+    "serve:Avatar": "vue serve ./src/components/Avatar/test.vue",
+    "serve:Icon": "vue serve ./src/components/Icon/test.vue",
+    "serve:Empty": "vue serve ./src/components/Empty/test.vue",
+    "serve:ImageLoader": "vue serve ./src/components/ImageLoader/test.vue",
+    "serve:Contact": "vue serve ./src/components/SideAside/Contact/test.vue",
+    "serve:Menu": "vue serve ./src/components/SideAside/Menu/test.vue",
+    "serve:SiteAside": "vue serve ./src/components/SiteAside/test.vue",
+    "serve:Layout": "vue serve ./src/components/Layout/test.vue",
+    "serve:RightList": "vue serve ./src/pages/Blog/components/RightList-test.vue",
+    "serve:DataForm": "vue serve ./src/components/MessageArea/DataForm-test.vue",
+    "serve:CommentList": "vue serve ./src/components/MessageArea/CommentList-test.vue",
+    "serve:MessageArea": "vue serve ./src/components/MessageArea/index.vue"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "element-ui": "^2.15.1",
+    "highlight": "^0.2.4",
+    "mockjs": "^1.1.0",
+    "nprogress": "^0.2.0",
+    "querystring": "^0.2.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.5.1",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -20,6 +41,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "webpack-bundle-analyzer": "^4.4.0"
   }
 }

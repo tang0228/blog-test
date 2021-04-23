@@ -1,0 +1,34 @@
+@import "../styles//var.less";
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(25px);
+    background-color: red;
+    padding: 10px 25px;
+    border-radius: 10px;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, .8);
+    color: #fff;
+    display: flex;
+    line-height: 2;
+    align-items: center;
+    transition: .8s;
+    opacity: 0;
+    white-space: nowrap;
+    .icon {
+        margin: 7px;
+    }
+    &-success {
+        background-color: @success;
+    }
+    &-error {
+        background-color: @danger;
+    }
+    &-warn {
+        background-color: @warn;
+    }
+    &-info {
+        background-color: @primary;
+    }
+    
+}
