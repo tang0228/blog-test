@@ -1,0 +1,32 @@
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(25px);
+  background-color: red;
+  padding: 10px 25px;
+  border-radius: 10px;
+  box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.8);
+  color: #fff;
+  display: flex;
+  line-height: 2;
+  align-items: center;
+  transition: 0.8s;
+  opacity: 0;
+  white-space: nowrap;
+}
+.message .icon {
+  margin: 7px;
+}
+.message-success {
+  background-color: #7ebf50;
+}
+.message-error {
+  background-color: #cc3600;
+}
+.message-warn {
+  background-color: #dc6a12;
+}
+.message-info {
+  background-color: #6b9eee;
+}
