@@ -74,6 +74,5 @@ export default {
     margin: 0 0 15px 0;
     font-size: 18px;
   }
-  
 }
 </style>
